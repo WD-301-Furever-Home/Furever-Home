@@ -1,0 +1,65 @@
+<body>
+<mat-toolbar color="primary">
+    <span>FUREVER HOME</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/services">Services</button>
+    <button mat-button routerLink="/contact">Contact</button>
+</mat-toolbar>
+
+<div class="services-page">
+    <img src="assets/images/Ellipse 9.png" class="overlay-image" />
+
+    
+    <div class="header">
+        <h1 class="title">SERVICES</h1>
+    </div>
+    
+    <p class="subtitle">Browse All Adoptable Pets Available</p>
+
+    
+    <div class="carousel-wrapper">
+        <button mat-icon-button class="nav-btn left" (click)="prevSlide()">
+            <mat-icon>chevron_left</mat-icon>
+        </button>
+      
+        <div class="carousel" #carousel>
+            <mat-card *ngFor="let pet of pets" class="pet-card">
+                <img [src]="pet.image" alt="{{ pet.name }}" class="pet-image" />
+                <div class="pet-info">
+                    <h3>{{ pet.name }}</h3>
+                    <p>{{ pet.breed }}</p>
+                </div>
+            </mat-card>
+        </div>
+      
+        <button mat-icon-button class="nav-btn right" (click)="nextSlide()">
+            <mat-icon>chevron_right</mat-icon>
+        </button>
+    </div>
+
+    
+    <div class="signup-container">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScgBTkwPh7Xf_jwfZ5nxnpGfmjn0ylBc9APbNDmKR3NaRklsQ/viewform" target="_blank"><button mat-raised-button class="signup-btn">FOSTER & VOLUNTEER SIGN-UPS</button></a>
+    </div>
+
+    
+    <div class="footer">
+        <div class="footer-section">
+            <h4>LOCATION</h4>
+            <p class="address">Sitio Irung Brgy. Tabun, Mabalacat, Philippines</p>
+        </div>
+    <div class="footer-section">
+      <a routerLink="/">HOME</a>
+      <a routerLink="/about">ABOUT</a>  
+      <a routerLink="/services">SERVICES</a>
+      <a routerLink="/contact">CONTACT</a>
+        </div>
+        <div class="footer-section">
+            <h4>FOLLOW US</h4>
+            <a class = "facebook" href="https://www.facebook.com/Noahsarkdogandcatshelter" target="_blank"><p>Facebook</p></a>
+        </div>
+    </div>
+</div>
+</body>

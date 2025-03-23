@@ -1,0 +1,89 @@
+<mat-toolbar color="primary">
+    <span>FUREVER HOME</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/services">Services</button>
+    <button mat-button routerLink="/contact">Contact</button>
+
+</mat-toolbar>
+<h2 class="contact-title">CONTACT US</h2>
+
+<div style="display: flex; justify-content: space-between;">
+    <section class="location">
+        <h3>Our Location</h3>
+        <p>Sitio Irung Brgy. Tabun, Mabalacat, Philippines</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123175.1425020088!2d120.44124841690069!3d15.255618937333516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eb7f5241e0e7%3A0xd0388f1ec53c8df4!2sNoah%E2%80%99s%20Ark%20Animal%20Dog%20and%20Cat%20Sanctuary%20%2F%20Shelter!5e0!3m2!1sen!2sph!4v1742727076495!5m2!1sen!2sph" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required [(ngModel)]="contact.name" name="name" placeholder="Your Name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required [(ngModel)]="contact.email" name="email" placeholder="Your Email">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" required [(ngModel)]="contact.message" name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+    <div style="margin-right: 20px;">
+        <div class="directory-container">
+            <div>
+                <a routerLink="/vet-directory">
+                    <img src="assets/images/vet-dir.jpg" alt="Vet Directory" class="directory-image">
+                </a>
+                <a href="https://www.yelp.com/search?cflt=vet&find_loc=San+Fernando%2C+Pampanga" target="_blank" class="dirlink">
+                    <button class="directory">Vet Directory</button>
+                </a>
+            </div>
+        
+            <div>
+                <a routerLink="/shelter-directory">
+                    <img src="assets/images/shelter-dir.jpg" alt="Shelter Directory" class="directory-image">
+                </a>
+                <a href="https://financialassistance.ph/animal-shelters-philippines/#google_vignette" target="_blank" class="dirlink">
+                    <button class="directory">Shelter Directory</button>
+                </a>
+            </div>
+        </div>
+        
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-location">
+        <p class = 'loc'>LOCATION</p>
+        <p class="address">Sitio Irung Brgy. Tabun, Mabalacat, Philippines</p>
+      </div>
+      <div class="footer-links">
+        <a routerLink="/">Home</a>
+        <a routerLink="/about">About</a>
+        <a routerLink="/services">Services</a>
+        <a routerLink="/contact">Contact</a>
+      </div>
+      <div class="footer-follow">
+        <p>FOLLOW US</p>
+        <a class = "facebook" href="https://www.facebook.com/Noahsarkdogandcatshelter" target="_blank"><p>Facebook</p></a>
+      </div>
+    </div>
+  </footer>

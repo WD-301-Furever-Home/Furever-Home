@@ -1,0 +1,71 @@
+<mat-toolbar color="primary">
+    <span>FUREVER HOME</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/services">Services</button>
+    <button mat-button routerLink="/contact">Contact</button>
+  </mat-toolbar>
+  
+  <section class="hero">
+    <h1 data-aos="fade-up">FIND YOUR FUREVER FRIEND</h1>
+  </section>
+  
+  <section class="featured-animals">
+    <h2 data-aos="fade-right">Featured Animals</h2>
+    <a href="https://www.facebook.com/Noahsarkdogandcatshelter" target="_blank"><button class="adopt-btn">Browse Adoptable Pets</button></a>
+    <div class="image-container">
+      <img *ngFor="let img of images" [src]="img.image" [alt]="img.name" />
+    </div>  
+  </section>
+  
+  <section class="why-adopt">
+    <div class="why-adopt-container">
+      <img src="assets/images/dog-cat.jpg" alt="Why Adopt?" class="why-adopt-img">
+      <div class="why-adopt-text">
+        <h2 data-aos="fade-left">Why Adopt?</h2>
+        <p>Adopting a pet means giving a loving animal a second chance at life. 
+            Every year, thousands of animals wait in shelters for a forever home, longing for love and companionship. 
+            By choosing adoption, you're not only gaining a loyal friend but also making space for another pet in need. 
+            Save a life, experience unconditional love, and be a hero—adopt today!</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="volunteer">
+    <marquee behavior="scroll" direction="left">
+      <span class="circle"></span> VOLUNTEER TODAY! 
+      <span class="circle"></span> VOLUNTEER TODAY! 
+      <span class="circle"> </span> VOLUNTEER TODAY! 
+      <span class="circle"> </span> VOLUNTEER TODAY! 
+      <span class="circle"> </span> VOLUNTEER TODAY! 
+      <span class="circle"> </span> VOLUNTEER TODAY! 
+    </marquee>
+  </section>
+  
+  <section class="featured-learning">
+    <div class="learning-container">
+      <img src="assets/images/foster.jpg" alt="Fostering" class="fostering-img">
+      <a href="https://network.bestfriends.org/education/operations/fostering-adoption-education" target="_blank"><button class="learn-btn">Learn About Fostering</button></a>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-location">
+        <p>LOCATION</p>
+        <p class="address">Sitio Irung Brgy. Tabun, Mabalacat, Philippines</p>
+      </div>
+      <div class="footer-links">
+        <a routerLink="/">Home</a>
+        <a routerLink="/about">About</a>
+        <a routerLink="/services">Services</a>
+        <a routerLink="/contact">Contact</a>
+      </div>
+      <div class="footer-follow">
+        <p>FOLLOW US</p>
+        <a class = "facebook" href="https://www.facebook.com/Noahsarkdogandcatshelter" target="_blank"><p>Facebook</p></a>
+      </div>
+    </div>
+  </footer>

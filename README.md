@@ -1,49 +1,27 @@
-# Furever-Home
-# Application Background
-# FurEver Home is an Angular- based website whose mission is to encourage the adoption and foster care of animals in Pampanga. The platform brings together adopters, fosterers, shelters, and rescues so that stray and abandoned pets can have forever homes.
-# The site is an easy access platform to find adoptable pets, learn about fostering opportunities, and become volunteer members. FurEver Home promotes responsible pet ownership through education and advocacy programs, seeking to decrease the level of homeless pets in the neighborhood.
+# FureverFriend
 
-# Frameworks and Components
-# FRONT END
-# Angular: A TypeScript-based front-end framework used to build the dynamic and interactive user interface.
-# Angular Material: Offers UI elements for a responsive, modern look.
-# RxJS: Used for handling asynchronous operations and state management.
-# SCSS (Sass): Enhances the styling capabilities with modular and reusable styles.
-# BACK END
-# Node.js: Provides a scalable runtime environment for handling requests efficiently.
-# Express.js: A lightweight web framework for handling routes, APIs, and server-side logic.
-# MongoDB: NoSQL database used for storing user data, pet listings, and adoption applications.
-# Mongoose: ODM (Object Data Modeling) library for MongoDB to structure and query data effectively.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
-# Core Components
-# HOME PAGE
-# Hero section with heartwarming pet images.
-# Featured adoptable animals.
-# Information on the benefits of adoption and fostering.
+## Development server
 
-# ABOUT PAGE
-# Vision and mission of FurEver Home.
-# Educational resources on pet care and adoption.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-# SERVICES PAGE
-# Foster & volunteer sign-up section.
-# Searchable list of adoptable pets.
+## Code scaffolding
 
-# CONTACT PAGE
-# Contact details of FurEver Home.
-# Shelter and veterinary clinic directory.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-# ADOPTABLE PET LISTINGS
-# Browse, filter, and view pet profiles.
-# Adoption application process.
+## Build
 
-# USER AUTHENTICATION
-# Sign-up/login functionality.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-# ADMIN DASHBOARD
-# Manage pet listings.
-# Review and approve adoption applications.
-# Monitor user activity
+## Running unit tests
 
-# FurEver Home uses modern web technologies to provide an efficient and accessible platform for connecting people with animals in need, ultimately fostering a compassionate pet-loving community.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
