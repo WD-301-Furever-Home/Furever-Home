@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -11,7 +12,7 @@ import { ChangeDetectorRef } from '@angular/core';
   selector: 'app-services',
   templateUrl: './services.component.html',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatIconModule, MatToolbarModule, CarouselModule], 
+  imports: [CommonModule, MatCardModule, MatIconModule, MatToolbarModule, CarouselModule, RouterModule], 
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements AfterViewInit {

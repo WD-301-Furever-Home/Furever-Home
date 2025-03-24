@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [
     MatToolbarModule,
-    FormsModule
+    FormsModule, RouterModule
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']

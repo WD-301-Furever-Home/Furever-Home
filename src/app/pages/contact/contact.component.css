@@ -13,6 +13,7 @@ mat-toolbar button {
     background-color: transparent !important;
     color: white;
     border: transparent !important;
+    
 }
 mat-toolbar button:hover {  
     color: lightcoral !important;
@@ -25,7 +26,9 @@ mat-toolbar button:hover {
 
 .location {
     text-align: left; 
-    margin: 20px 20px; 
+    margin-left: 220px;
+    border: solid 3px black;
+    margin-top: 110px;
 }
 
 footer {
@@ -78,15 +81,18 @@ footer {
 .loc {
     font-size: 15px;
 }
-
+.directory-image{
+    border: solid 3 black;
+}
 
 .contact-form {
     max-width: 800px; 
     border-radius: 10px; 
-    margin: 20px auto; 
     padding: 20px; 
     background-color: #4a6e2a; 
     color: white;
+    margin-right: 300px; 
+    margin-top: 110px;
 }
 
 .contact-title {
@@ -108,7 +114,7 @@ h3, p{
 }
 
 .contact-form div {
-    margin-bottom: 15px; /
+    margin-bottom: 15px; 
 }
 
 .contact-form label {

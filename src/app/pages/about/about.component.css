@@ -73,11 +73,17 @@ mat-toolbar button:hover {
     font-size: 22px; 
 }
 
-.mission h2, .vision h2 {
-    font-size: 60px; 
+.mission h2 {
+    font-size: 50px; 
     font-weight: 500;
+    padding-left: 220px;
+    padding-top: 50px;
 }
 
+.vision h2 {
+    font-size: 50px; 
+    font-weight: 500;
+}
 
 .mission p, .vision p {
     font-size: 35px; 

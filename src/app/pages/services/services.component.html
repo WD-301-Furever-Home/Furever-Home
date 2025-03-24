@@ -1,6 +1,7 @@
 <body>
+
 <mat-toolbar color="primary">
-    <span>FUREVER HOME</span>
+    <span class="">FUREVER HOME</span>
     <span class="spacer"></span>
     <button mat-button routerLink="/">Home</button>
     <button mat-button routerLink="/about">About</button>
@@ -20,9 +21,6 @@
 
     
     <div class="carousel-wrapper">
-        <button mat-icon-button class="nav-btn left" (click)="prevSlide()">
-            <mat-icon>chevron_left</mat-icon>
-        </button>
       
         <div class="carousel" #carousel>
             <mat-card *ngFor="let pet of pets" class="pet-card">
@@ -34,9 +32,6 @@
             </mat-card>
         </div>
       
-        <button mat-icon-button class="nav-btn right" (click)="nextSlide()">
-            <mat-icon>chevron_right</mat-icon>
-        </button>
     </div>
 
     
@@ -49,12 +44,12 @@
         <div class="footer-section">
             <h4>LOCATION</h4>
             <p class="address">Sitio Irung Brgy. Tabun, Mabalacat, Philippines</p>
-        </div>
-    <div class="footer-section">
-      <a routerLink="/">HOME</a>
-      <a routerLink="/about">ABOUT</a>  
-      <a routerLink="/services">SERVICES</a>
-      <a routerLink="/contact">CONTACT</a>
+                </div>
+        <div class="footer-section">
+            <a routerLink="/">HOME</a>
+            <a routerLink="/about">ABOUT</a>  
+            <a routerLink="/services">SERVICES</a>
+            <a routerLink="/contact">CONTACT</a>
         </div>
         <div class="footer-section">
             <h4>FOLLOW US</h4>
@@ -63,3 +58,4 @@
     </div>
 </div>
 </body>
+

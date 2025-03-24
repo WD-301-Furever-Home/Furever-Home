@@ -9,7 +9,6 @@ mat-toolbar {
     font-size: 18px;
     background-color: transparent !important; 
 }
-
 mat-toolbar span,  
 mat-toolbar button {  
     font-weight: bold;
@@ -82,8 +81,9 @@ mat-toolbar button:hover {
   }
   
   .title {
+    padding-top: 140px;
       font-weight: bold;
-      font-size: 3em;
+      font-size: 4em;
       letter-spacing: 2px;
       
   }
@@ -97,8 +97,9 @@ mat-toolbar button:hover {
   }
   
   .carousel {
-    padding-top: 120px;
-      display: flex;
+    padding-top: 130px;
+    padding-left: 120px;
+    display: flex;
       overflow-x: auto;
       flex-direction: row;
       width: 100%;
@@ -107,6 +108,9 @@ mat-toolbar button:hover {
   .pet-card {
       flex: 0 0 auto;
       margin-right: 10px;
+  }
+  .pet-info{
+    text-align: center;
   }
   
  
@@ -128,23 +132,6 @@ mat-toolbar button:hover {
 }
 
 
-    .nav-btn {
-        width: 60px;
-        height: 60px;
-        background-color: #ECEFF1; 
-        border-radius: 50%; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-.nav-btn:hover {
-    background-color: #DDE2E6; 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
-}
   
  
   .signup-container {
@@ -189,23 +176,33 @@ mat-toolbar button:hover {
   }
   
   .footer-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 10px;
-      line-height: 1.9;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 1.9;
+    font-weight: bold;
+}
 
-  }
-  
-  .footer-section h4 {
-      margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-      margin: 5px 0;
-  }
-  
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+/* Fix for hyperlink styling */
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px ;
+}
+
+
+    
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
       .services-page {
